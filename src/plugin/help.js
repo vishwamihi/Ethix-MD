@@ -90,17 +90,16 @@ let mode = ethix.public ? 'private' : 'public';
           },
           interactiveMessage: proto.Message.InteractiveMessage.create({
             body: proto.Message.InteractiveMessage.Body.create({
-              text: `╰─╴─★ ᴅᴀʀᴋ-ʀɪᴏ-ᴍᴅ ★─╴──╯
+              text: `╰─╴─★ *ᴅᴀʀᴋ-ʀɪᴏ-ᴍᴅ* ★─╴──╯
 ╭──────────────────╮
-  🔐 ʙᴏᴛ ɴᴀᴍᴇ : ᴅᴀʀᴋ-ʀɪᴏ-ᴍᴅ
-  👨‍💻 ᴅᴇᴠᴇʟᴏᴘᴇʀꜱ : ᴅᴀʀᴋ-ʀɪᴏ-ʙʀᴏᴛʜᴇʀꜱ
-  💦 ᴡᴏʀᴋᴛʏᴘᴇ :
-  🎓 ᴘʀᴇꜰɪx :
-  📞 ɴᴜᴍʙᴇʀ :
-  📡 ᴘʟᴀᴛꜰᴏʀᴍᴇ :
+  🔐 *ʙᴏᴛ ɴᴀᴍᴇ* : _ᴅᴀʀᴋ-ʀɪᴏ-ᴍᴅ_
+  👨‍💻 *ᴅᴇᴠᴇʟᴏᴘᴇʀꜱ* : _ᴅᴀʀᴋ-ʀɪᴏ-ʙʀᴏᴛʜᴇʀꜱ_
+  💦 ᴡᴏʀᴋᴛʏᴘᴇ : _${mode}_
+  🎓 *ᴘʀᴇꜰɪx* : _[Multi-Prefix]_
+  📞 *ɴᴜᴍʙᴇʀ* : _94702481115_
+  📡 *ᴘʟᴀᴛꜰᴏʀᴍᴇ* : _${os.platform()}_
 ╰──────────────────╯
-> ᴄᴇʏʟᴏɴ ʙᴇꜱᴛ ᴍᴜʟᴛɪ-ᴅᴇᴠɪᴄᴇ ᴡᴀ ʙᴏᴛ 
-> 🦜ᴅᴀʀᴋ-ʀɪᴏ-ᴍᴅ`
+> ᴄᴇʏʟᴏɴ ʙᴇꜱᴛ ᴍᴜʟᴛɪ-ᴅᴇᴠɪᴄᴇ ᴡᴀ ʙᴏᴛ `
             }),
             footer: proto.Message.InteractiveMessage.Footer.create({
               text: "🦜ᴅᴀʀᴋ-ʀɪᴏ-ᴍᴅ"
@@ -116,70 +115,70 @@ let mode = ethix.public ? 'private' : 'public';
               buttons: [
                 {
                   "name": "single_select",
-                  "buttonParamsJson": `{"title":"🔖𝚻𝚫𝚸 𝐅𝚯𝚪 𝚯𝚸𝚵𝚴 𝚳𝚵𝚴𝐔",
+                  "buttonParamsJson": `{"title":"VIEW MENUS",
                  "sections":
                    [{
-                    "title":"😎 𝛯𝑇𝛨𝛪𝛸-𝛭𝐷 𝛥𝐿𝐿𝛭𝛯𝛮𝑈",
-                    "highlight_label":"🤩 𝛥𝐿𝐿𝛭𝛯𝛮𝑈",
+                    "title":"DARK-RIO-MD ALL MENU",
+                    "highlight_label":"ALL MENU",
                     "rows":[
                       {
                        "header":"",
                        "title":"🔰 ᴀʟʟ ᴍᴇɴᴜ",
-                       "description":"🎨𝛯𝑇𝛨𝛪𝛸-𝛭𝐷 𝛥𝐿𝐿𝛭𝛯𝛮𝑈🎨",
+                       "description":"🦜ᴅᴀʀᴋ-ʀɪᴏ-ᴍᴅ",
                        "id":"View All Menu"
                       },
                       {
                         "header":"",
                         "title":"⬇️ ᴅᴏᴡɴʟᴀᴏᴅᴇʀ ᴍᴇɴᴜ",
-                        "description":"📂𝐒𝚮𝚯𝐖 𝚫𝐋𝐋 𝐃𝚯𝐖𝚴𝐋𝚯𝚫𝐃 𝐅𝚵𝚫𝚻𝐔𝚪𝚵𝐒🗂",
+                        "description":"🦜ᴅᴀʀᴋ-ʀɪᴏ-ᴍᴅ",
                         "id":"Downloader Menu"
                       },
                       {
                         "header":"",
                         "title":"👨‍👨‍👧‍👧ɢʀᴏᴜᴘ ᴍᴇɴᴜ",
-                        "description":"🥵𝐅𝚵𝚫𝚻𝐔𝚪𝚵 𝚻𝚮𝚫𝚻 𝚫𝚪𝚵 𝚯𝚴𝐋𝐘 𝚫𝛁𝚰𝐋𝚫𝚩𝐋𝚵 𝐅𝚯𝚪 𝐆𝚪𝚯𝐔𝚸🥵",
+                        "description":"🦜ᴅᴀʀᴋ-ʀɪᴏ-ᴍᴅ",
                         "id":"Group Menu"
                       },
                       {
                         "header":"",
                         "title":"👨‍🔧 ᴛᴏᴏʟ ᴍᴇɴᴜ",
-                        "description":"🛠 𝐒𝚮𝚯𝐖 𝚳𝚵 𝚻𝚯𝚯𝐋 𝚳𝚵𝚴𝐔",
+                        "description":"🦜ᴅᴀʀᴋ-ʀɪᴏ-ᴍᴅ",
                         "id":"Tool Menu"
                       },
                       {
                         "header":"",
                         "title":"🗿 ᴍᴀɪɴ ᴍᴇɴᴜ",
-                        "description":"📪 𝚩𝚯𝚻 𝚳𝚫𝚰𝚴 𝐂𝚯𝚳𝚳𝚫𝚴𝐃𝐒🗳",
+                        "description":"🦜ᴅᴀʀᴋ-ʀɪᴏ-ᴍᴅ",
                         "id":"Main Menu"
                       },
                      {
                         "header":"",
                         "title":"👨‍💻 ᴏᴡɴᴇʀ ᴍᴇɴᴜ",
-                        "description":"😎𝐅𝚵𝚫𝚻𝐔𝚪𝚵 𝚻𝚮𝚫𝚻 𝚫𝚪𝚵 𝚯𝚴𝐋𝐘 𝐅𝚯𝚪 𝚳𝐘 𝚮𝚫𝚴𝐃𝐒𝚯𝚳𝚵 𝚯𝐖𝚴𝚵𝚪👨‍💼",
+                        "description":"🦜ᴅᴀʀᴋ-ʀɪᴏ-ᴍᴅ",
                         "id":"Owner Menu"
                       },
                       {
                         "header":"",
                         "title":"✨ ᴀɪ ᴍᴇɴᴜ",
-                        "description":"💫 𝐒𝚮𝚯𝐖 𝚳𝚵 𝚫𝚰 𝚳𝚵𝚴𝐔 🎇",
+                        "description":"🦜ᴅᴀʀᴋ-ʀɪᴏ-ᴍᴅ",
                         "id":"Ai Menu"
                       },
                       {
                         "header":"",
                         "title":"🔍sᴇᴀʀᴄʜ ᴍᴇɴᴜ🔎",
-                        "description":"♂️ 𝐒𝚮𝚯𝐖 𝚳𝚵 𝐒𝚵𝚫𝚪𝐂𝚮 𝚳𝚵𝚴𝐔",
+                        "description":"🦜ᴅᴀʀᴋ-ʀɪᴏ-ᴍᴅ",
                         "id":"Search Menu"
                       },
                       {
                         "header":"",
                         "title":"🧚‍♂️ sᴛᴀʟᴋ ᴍᴇɴᴜ",
-                        "description":"👨‍💼 𝐒𝚮𝚯𝐖 𝚳𝚵 𝐒𝚻𝚫𝐋𝐊 𝚳𝚵𝚴𝐔🪆",
+                        "description":"🦜ᴅᴀʀᴋ-ʀɪᴏ-ᴍᴅ",
                         "id":"Stalk Menu"
                       },
                       {
                         "header":"",
                         "title":"🥏 𝚌𝚘𝚗𝚟𝚎𝚛𝚝𝚎𝚛 𝚖𝚎𝚗𝚞",
-                        "description":"🛷 𝐒𝚮𝚯𝐖 𝚳𝚵 𝐂𝚯𝚴𝛁𝚵𝚪𝚻𝚵𝚪 𝚳𝚵𝚴𝐔",
+                        "description":"🦜ᴅᴀʀᴋ-ʀɪᴏ-ᴍᴅ",
                         "id":"Converter Menu"
                       }
                     ]}
@@ -192,7 +191,7 @@ let mode = ethix.public ? 'private' : 'public';
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '0029VaSaZd5CBtxGawmSph1k',
+                  newsletterJid: 'https://whatsapp.com/channel/0029VaSaZd5CBtxGawmSph1k',
                   newsletterName: "DARK-RIO-MD",
                   serverMessageId: 143
                 }
@@ -209,15 +208,16 @@ let mode = ethix.public ? 'private' : 'public';
       if (selectedId == "View All Menu") {
         const mode = process.env.MODE;
         const str = `hey ${m.pushName} ${pushwish}
-╭─────────────━┈⊷
-│🤖 ʙᴏᴛ ɴᴀᴍᴇ: *ᴇᴛʜɪx-ᴍᴅ*
-│📍 ᴠᴇʀꜱɪᴏɴ: 2.0.3
-│👨‍💻 ᴏᴡɴᴇʀ : *ᴇᴛʜɪx xsɪᴅ*      
-│👤 ɴᴜᴍʙᴇʀ: 919142294671
-│💻 ᴘʟᴀᴛғᴏʀᴍ: *${os.platform()}*
-│🛡 ᴍᴏᴅᴇ: *${mode}*
-│💫 ᴘʀᴇғɪx: *[Multi-Prefix]*
-╰─────────────━┈⊷ 
+╰─────╴─★ *ᴅᴀʀᴋ-ʀɪᴏ-ᴍᴅ* ★─────╴──╯
+╭────────────────────────────────╮
+  🔐 *ʙᴏᴛ ɴᴀᴍᴇ* : _ᴅᴀʀᴋ-ʀɪᴏ-ᴍᴅ_
+  👨‍💻 *ᴅᴇᴠᴇʟᴏᴘᴇʀꜱ* : _ᴅᴀʀᴋ-ʀɪᴏ-ʙʀᴏᴛʜᴇʀꜱ_
+  💦 ᴡᴏʀᴋᴛʏᴘᴇ : _${mode}_
+  🎓 *ᴘʀᴇꜰɪx* : _[Multi-Prefix]_
+  📞 *ɴᴜᴍʙᴇʀ* : _94702481115_
+  📡 *ᴘʟᴀᴛꜰᴏʀᴍᴇ* : _${os.platform()}_
+╰────────────────────────────────╯
+> ᴄᴇʏʟᴏɴ ʙᴇꜱᴛ ᴍᴜʟᴛɪ-ᴅᴇᴠɪᴄᴇ ᴡᴀ ʙᴏᴛ  
 ╭━❮ 𝙲𝙾𝙽𝚅𝙴𝚁𝚃𝙴𝚁 ❯━╮
 ┃✰ ${prefix}𝙰𝚃𝚃𝙿
 ┃✰ ${prefix}𝙰𝚃𝚃𝙿2
@@ -327,7 +327,7 @@ let mode = ethix.public ? 'private' : 'public';
             message: {
                 contactMessage: {
                     displayName: `Ethix-MD`,
-                    vcard: `BEGIN:VCARD\nVERSION:3.0\nN:;a,;;;\nFN:'Ethix-MD'\nitem1.TEL;waid=${
+                    vcard: `BEGIN:VCARD\nVERSION:3.0\nN:;a,;;;\nFN:'DARK-RIO-MD'\nitem1.TEL;waid=${
                         m.sender.split("@")[0]
                     }:${
                         m.sender.split("@")[0]
@@ -343,8 +343,8 @@ let mode = ethix.public ? 'private' : 'public';
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363249960769123@newsletter',
-                  newsletterName: "Ethix-MD",
+                  newsletterJid: 'https://whatsapp.com/channel/0029VaSaZd5CBtxGawmSph1k',
+                  newsletterName: "DARK-RIO-MD",
                   serverMessageId: 143
                 }
               }
@@ -382,8 +382,8 @@ await Matrix.sendMessage(m.from, {
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363249960769123@newsletter',
-                  newsletterName: "Ethix-MD",
+                  newsletterJid: 'https://whatsapp.com/channel/0029VaSaZd5CBtxGawmSph1k',
+                  newsletterName: "DARK-RIO-MD",
                   serverMessageId: 143
                 }
               }
@@ -448,8 +448,8 @@ await Matrix.sendMessage(m.from, {
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363249960769123@newsletter',
-                  newsletterName: "Ethix-MD",
+                  newsletterJid: 'https://whatsapp.com/channel/0029VaSaZd5CBtxGawmSph1k',
+                  newsletterName: "DARK-RIO-MD",
                   serverMessageId: 143
                 }
               }
@@ -487,8 +487,8 @@ await Matrix.sendMessage(m.from, {
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363249960769123@newsletter',
-                  newsletterName: "Ethix-MD",
+                  newsletterJid: 'https://whatsapp.com/channel/0029VaSaZd5CBtxGawmSph1k',
+                  newsletterName: "DARK-RIO-MD",
                   serverMessageId: 143
                 }
               }
@@ -523,8 +523,8 @@ await Matrix.sendMessage(m.from, {
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363249960769123@newsletter',
-                  newsletterName: "Ethix-MD",
+                  newsletterJid: 'https://whatsapp.com/channel/0029VaSaZd5CBtxGawmSph1k',
+                  newsletterName: "DARK-RIO-MD",
                   serverMessageId: 143
                 }
               }
@@ -551,8 +551,8 @@ await Matrix.sendMessage(m.from, {
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363249960769123@newsletter',
-                  newsletterName: "Ethix-MD",
+                  newsletterJid: 'https://whatsapp.com/channel/0029VaSaZd5CBtxGawmSph1k',
+                  newsletterName: "DARK-RIO-MD",
                   serverMessageId: 143
                 }
               }
@@ -582,8 +582,8 @@ await Matrix.sendMessage(m.from, {
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363249960769123@newsletter',
-                  newsletterName: "Ethix-MD",
+                  newsletterJid: 'https://whatsapp.com/channel/0029VaSaZd5CBtxGawmSph1k',
+                  newsletterName: "DARK-RIO-MD",
                   serverMessageId: 143
                 }
               }
@@ -614,8 +614,8 @@ await Matrix.sendMessage(m.from, {
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363249960769123@newsletter',
-                  newsletterName: "Ethix-MD",
+                  newsletterJid: 'https://whatsapp.com/channel/0029VaSaZd5CBtxGawmSph1k',
+                  newsletterName: "DARK-RIO-MD",
                   serverMessageId: 143
                 }
               }
@@ -647,8 +647,8 @@ await Matrix.sendMessage(m.from, {
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363249960769123@newsletter',
-                  newsletterName: "Ethix-MD",
+                  newsletterJid: 'https://whatsapp.com/channel/0029VaSaZd5CBtxGawmSph1k',
+                  newsletterName: "DARK-RIO-MD",
                   serverMessageId: 143
                 }
               }
