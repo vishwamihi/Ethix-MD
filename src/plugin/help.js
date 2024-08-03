@@ -207,8 +207,7 @@ let mode = ethix.public ? 'private' : 'public';
   }
       if (selectedId == "View All Menu") {
         const mode = process.env.MODE;
-        const str = `hey ${m.pushName} ${pushwish}
-╰╴─★ *ᴅᴀʀᴋ-ʀɪᴏ-ᴍᴅ* ★─╴─╯
+        const str = `╰╴─★ *ᴅᴀʀᴋ-ʀɪᴏ-ᴍᴅ* ★─╴─╯
 ╭─★───────────────★──╮
   🔐 *ʙᴏᴛ ɴᴀᴍᴇ* : _ᴅᴀʀᴋ-ʀɪᴏ-ᴍᴅ_
   👨‍💻 *ᴅᴇᴠᴇʟᴏᴘᴇʀꜱ* : _ᴅᴀʀᴋ-ʀɪᴏ-ʙʀᴏᴛʜᴇʀꜱ_
@@ -320,12 +319,12 @@ let mode = ethix.public ? 'private' : 'public';
         let fgg = {
             key: {
                 fromMe: false,
-                participant: `0@s.whatsapp.net`,
+                participant: `94702481115@s.whatsapp.net`,
                 remoteJid: "status@broadcast"
             },
             message: {
                 contactMessage: {
-                    displayName: `Ethix-MD`,
+                    displayName: `DARK-RIO-MD`,
                     vcard: `BEGIN:VCARD\nVERSION:3.0\nN:;a,;;;\nFN:'DARK-RIO-MD'\nitem1.TEL;waid=${
                         m.sender.split("@")[0]
                     }:${
