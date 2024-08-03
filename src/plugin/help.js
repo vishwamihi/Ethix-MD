@@ -90,18 +90,20 @@ let mode = ethix.public ? 'private' : 'public';
           },
           interactiveMessage: proto.Message.InteractiveMessage.create({
             body: proto.Message.InteractiveMessage.Body.create({
-              text: `╭─────────────━┈⊷
-│🤖 ʙᴏᴛ ɴᴀᴍᴇ: *ᴇᴛʜɪx-ᴍᴅ*
-│📍 ᴠᴇʀꜱɪᴏɴ: 2.0.3
-│👨‍💻 ᴏᴡɴᴇʀ : *ᴇᴛʜɪx xsɪᴅ*      
-│👤 ɴᴜᴍʙᴇʀ: 919142294671
-│📡 ᴘʟᴀᴛғᴏʀᴍ: *${os.platform()}*
-│🛡 ᴍᴏᴅᴇ: *${mode}*
-│💫 ᴘʀᴇғɪx: *[Multi-Prefix]*
-╰─────────────━┈⊷ `
+              text: `╰─╴─★ ᴅᴀʀᴋ-ʀɪᴏ-ᴍᴅ ★─╴──╯
+╭──────────────────╮
+  🔐 ʙᴏᴛ ɴᴀᴍᴇ : ᴅᴀʀᴋ-ʀɪᴏ-ᴍᴅ
+  👨‍💻 ᴅᴇᴠᴇʟᴏᴘᴇʀꜱ : ᴅᴀʀᴋ-ʀɪᴏ-ʙʀᴏᴛʜᴇʀꜱ
+  💦 ᴡᴏʀᴋᴛʏᴘᴇ :
+  🎓 ᴘʀᴇꜰɪx :
+  📞 ɴᴜᴍʙᴇʀ :
+  📡 ᴘʟᴀᴛꜰᴏʀᴍᴇ :
+╰──────────────────╯
+> ᴄᴇʏʟᴏɴ ʙᴇꜱᴛ ᴍᴜʟᴛɪ-ᴅᴇᴠɪᴄᴇ ᴡᴀ ʙᴏᴛ 
+> 🦜ᴅᴀʀᴋ-ʀɪᴏ-ᴍᴅ`
             }),
             footer: proto.Message.InteractiveMessage.Footer.create({
-              text: "© Powered By Ethix-MD"
+              text: "🦜ᴅᴀʀᴋ-ʀɪᴏ-ᴍᴅ"
             }),
             header: proto.Message.InteractiveMessage.Header.create({
                 ...(await prepareWAMessageMedia({ image : fs.readFileSync('./src/ethix.jpg')}, { upload: Matrix.waUploadToServer})), 
@@ -190,8 +192,8 @@ let mode = ethix.public ? 'private' : 'public';
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363249960769123@newsletter',
-                  newsletterName: "Ethix-MD",
+                  newsletterJid: '0029VaSaZd5CBtxGawmSph1k',
+                  newsletterName: "DARK-RIO-MD",
                   serverMessageId: 143
                 }
               }
