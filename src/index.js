@@ -124,7 +124,7 @@ async function start() {
                 if (initialConnection) {
                     console.log(chalk.green("DARK-RIO-MD CONNTED 🌠"));
                     Matrix.sendMessage(Matrix.user.id, {
-                        text: `DARK-RIO-MD CONNTED 🌠`,
+                        text: `> 🦜 ᴅᴀʀᴋ-ʀɪᴏ-ᴍᴅ ɪꜱ ᴡᴏʀᴋɪɴɢ ɴᴏᴡ`,
                     });
                     initialConnection = false;
                 } else {
@@ -175,7 +175,7 @@ async function start() {
 start();
 
 app.get("/", (req, res) => {
-    res.send("DARK-RIO-MD BOT WORKING!!");
+    res.send("> 🦜 ᴅᴀʀᴋ-ʀɪᴏ-ᴍᴅ ɪꜱ ᴡᴏʀᴋɪɴɢ ɴᴏᴡ");
 });
 
 app.listen(PORT, () => {
