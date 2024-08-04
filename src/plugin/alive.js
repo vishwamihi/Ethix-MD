@@ -23,7 +23,7 @@ const alive = async (m, Matrix) => {
 
 "Amidst the complexity of technology, small developers find beauty in simplicity, crafting elegant solutions that make a big difference."
 
->*Follow us*
+> *Follow us*
 https://whatsapp.com/channel/0029VaSaZd5CBtxGawmSph1k
 
 > 𝐃𝐀𝐑𝐊-𝐑𝐈𝐎-𝐁𝐑𝐎𝐓𝐇𝐄𝐑𝐒 </>🇱🇰`;
