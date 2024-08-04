@@ -9,17 +9,17 @@ const alwaysonlineCommand = async (m, Matrix) => {
   const text = m.body.slice(prefix.length + cmd.length).trim().toLowerCase();
 
   if (cmd === 'alwaysonline') {
-    if (!isCreator) return m.reply("*📛 THIS IS AN OWNER COMMAND*");
+    if (!isCreator) return m.reply("*💀 𝐎𝐍𝐋𝐘 𝐎𝐖𝐍𝐄𝐑𝐒*");
     let responseMessage;
 
     if (text === 'on') {
       config.ALWAYS_ONLINE = true;
-      responseMessage = "Always Online has been enabled.";
+      responseMessage = "𝙰𝙻𝚆𝙰𝚈𝚂 𝙾𝙽𝙻𝙸𝙽𝙴 𝙸𝚂 𝚆𝙾𝚁𝙺𝙸𝙽𝙶";
     } else if (text === 'off') {
       config.ALWAYS_ONLINE = false;
-      responseMessage = "Always Online has been disabled.";
+      responseMessage = "𝙰𝙻𝚆𝙰𝚈𝚂 𝙾𝙽𝙻𝙸𝙽𝙴 𝙸𝚂 𝙽𝙾𝚃 𝚆𝙾𝚁𝙺𝙸𝙽𝙶";
     } else {
-      responseMessage = "Usage:\n- `alwaysonline on`: Enable Always Online\n- `alwaysonline off`: Disable Always Online";
+      responseMessage = "𝚄𝚂𝙰𝙶𝙴:\n- `alwaysonline on`: 𝙰𝙻𝚆𝙰𝚈𝚂 𝙾𝙽𝙻𝙸𝙽𝙴 𝚆𝙾𝚁𝙺𝙸𝙽𝙶\n- `alwaysonline off`: 𝙰𝙻𝚆𝙰𝚈𝚂 𝙾𝙽𝙻𝙸𝙽𝙴 𝙽𝙾𝚃 𝚆𝙾𝚁𝙺𝙸𝙽𝙶";
     }
 
     try {
