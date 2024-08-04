@@ -34,7 +34,7 @@ const minutes = Math.floor((uptime % 3600) / 60); // Calculate minutes
 const seconds = Math.floor(uptime % 60); // Calculate seconds
 
 // Uptime
-const uptimeMessage = `*I am alive now since ${day}d ${hours}h ${minutes}m ${seconds}s*`;
+const uptimeMessage = `*Dark-Rio-Md is alive now since ${day}d ${hours}h ${minutes}m ${seconds}s*`;
 const runMessage = `*☀️ ${day} Day*\n*🕐 ${hours} Hour*\n*⏰ ${minutes} Minutes*\n*⏱️ ${seconds} Seconds*\n`;
 
 const xtime = moment.tz("Asia/Colombo").format("HH:mm:ss");
@@ -98,6 +98,7 @@ let mode = ethix.public ? 'private' : 'public';
   🎓 *ᴘʀᴇꜰɪx* : _[Multi-Prefix]_
   📞 *ɴᴜᴍʙᴇʀ* : 94702481115
   📡 *ᴘʟᴀᴛꜰᴏʀᴍᴇ* : _${os.platform()}_
+   _${runMessage}_
 ╰─★────────────★───╯
 > ᴄᴇʏʟᴏɴ ʙᴇꜱᴛ ᴍᴜʟᴛɪ-ᴅᴇᴠɪᴄᴇ ᴡᴀ ʙᴏᴛ `
             }),
@@ -115,7 +116,7 @@ let mode = ethix.public ? 'private' : 'public';
               buttons: [
                 {
                   "name": "single_select",
-                  "buttonParamsJson": `{"title":"VIEW MENUS",
+                  "buttonParamsJson": `{"title":"𝐕𝐈𝐄𝐖 𝐌𝐄𝐍𝐔",
                  "sections":
                    [{
                     "title":"DARK-RIO-MD ALL MENU",
@@ -189,9 +190,9 @@ let mode = ethix.public ? 'private' : 'public';
             contextInfo: {
                   mentionedJid: [m.sender], 
                   forwardingScore: 999,
-                  isForwarded: true,
+                  isForwarded: false,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: 'https://whatsapp.com/channel/0029VaSaZd5CBtxGawmSph1k',
+                  newsletterJid: '0029VaSaZd5CBtxGawmSph1k',
                   newsletterName: "DARK-RIO-MD",
                   serverMessageId: 143
                 }
@@ -339,9 +340,9 @@ let mode = ethix.public ? 'private' : 'public';
   contextInfo: {
                   mentionedJid: [m.sender], 
                   forwardingScore: 999,
-                  isForwarded: true,
+                  isForwarded: false,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: 'https://whatsapp.com/channel/0029VaSaZd5CBtxGawmSph1k',
+                  newsletterJid: '0029VaSaZd5CBtxGawmSph1k',
                   newsletterName: "DARK-RIO-MD",
                   serverMessageId: 143
                 }
@@ -378,9 +379,9 @@ await Matrix.sendMessage(m.from, {
   contextInfo: {
                   mentionedJid: [m.sender], 
                   forwardingScore: 999,
-                  isForwarded: true,
+                  isForwarded: false,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: 'https://whatsapp.com/channel/0029VaSaZd5CBtxGawmSph1k',
+                  newsletterJid: '0029VaSaZd5CBtxGawmSph1k',
                   newsletterName: "DARK-RIO-MD",
                   serverMessageId: 143
                 }
@@ -419,7 +420,7 @@ await Matrix.sendMessage(m.from, {
   contextInfo: {
     mentionedJid: [m.sender], 
     forwardingScore: 9999,
-    isForwarded: true,
+    isForwarded: false,
   }
 }, {
   quoted: m
@@ -444,9 +445,9 @@ await Matrix.sendMessage(m.from, {
   contextInfo: {
                   mentionedJid: [m.sender], 
                   forwardingScore: 999,
-                  isForwarded: true,
+                  isForwarded: false,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: 'https://whatsapp.com/channel/0029VaSaZd5CBtxGawmSph1k',
+                  newsletterJid: '0029VaSaZd5CBtxGawmSph1k',
                   newsletterName: "DARK-RIO-MD",
                   serverMessageId: 143
                 }
@@ -483,9 +484,9 @@ await Matrix.sendMessage(m.from, {
   contextInfo: {
                   mentionedJid: [m.sender], 
                   forwardingScore: 999,
-                  isForwarded: true,
+                  isForwarded: false,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: 'https://whatsapp.com/channel/0029VaSaZd5CBtxGawmSph1k',
+                  newsletterJid: '0029VaSaZd5CBtxGawmSph1k',
                   newsletterName: "DARK-RIO-MD",
                   serverMessageId: 143
                 }
@@ -519,9 +520,9 @@ await Matrix.sendMessage(m.from, {
   contextInfo: {
                   mentionedJid: [m.sender], 
                   forwardingScore: 999,
-                  isForwarded: true,
+                  isForwarded: false,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: 'https://whatsapp.com/channel/0029VaSaZd5CBtxGawmSph1k',
+                  newsletterJid: '0029VaSaZd5CBtxGawmSph1k',
                   newsletterName: "DARK-RIO-MD",
                   serverMessageId: 143
                 }
@@ -547,9 +548,9 @@ await Matrix.sendMessage(m.from, {
   contextInfo: {
                   mentionedJid: [m.sender], 
                   forwardingScore: 999,
-                  isForwarded: true,
+                  isForwarded: false,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: 'https://whatsapp.com/channel/0029VaSaZd5CBtxGawmSph1k',
+                  newsletterJid: '0029VaSaZd5CBtxGawmSph1k',
                   newsletterName: "DARK-RIO-MD",
                   serverMessageId: 143
                 }
@@ -580,7 +581,7 @@ await Matrix.sendMessage(m.from, {
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: 'https://whatsapp.com/channel/0029VaSaZd5CBtxGawmSph1k',
+                  newsletterJid: '0029VaSaZd5CBtxGawmSph1k',
                   newsletterName: "DARK-RIO-MD",
                   serverMessageId: 143
                 }
@@ -610,9 +611,9 @@ await Matrix.sendMessage(m.from, {
   contextInfo: {
                   mentionedJid: [m.sender], 
                   forwardingScore: 999,
-                  isForwarded: true,
+                  isForwarded: false,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: 'https://whatsapp.com/channel/0029VaSaZd5CBtxGawmSph1k',
+                  newsletterJid: '0029VaSaZd5CBtxGawmSph1k',
                   newsletterName: "DARK-RIO-MD",
                   serverMessageId: 143
                 }
@@ -643,9 +644,9 @@ await Matrix.sendMessage(m.from, {
   contextInfo: {
                   mentionedJid: [m.sender], 
                   forwardingScore: 999,
-                  isForwarded: true,
+                  isForwarded: false,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: 'https://whatsapp.com/channel/0029VaSaZd5CBtxGawmSph1k',
+                  newsletterJid: '0029VaSaZd5CBtxGawmSph1k',
                   newsletterName: "DARK-RIO-MD",
                   serverMessageId: 143
                 }
