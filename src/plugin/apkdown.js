@@ -67,10 +67,10 @@ const searchAPK = async (m, Matrix) => {
             },
             interactiveMessage: proto.Message.InteractiveMessage.create({
               body: proto.Message.InteractiveMessage.Body.create({
-                text: `Ethix-MD APK Downloader\n\n🔍 Search and download your favorite APKs easily.\n\n📌 Simply select an APK from the list below to get started.\n\n`
+                text: `Dark-Rio-Md APK Downloader\n\n💦 Ezy Apk Downloader By Dark-Rio-Md\n\n💫 Choose Your APK from the list below to get started.\n\n`
               }),
               footer: proto.Message.InteractiveMessage.Footer.create({
-                text: "© Powered By Ethix-MD"
+                text: "*🦜 ᴅᴀʀᴋ-ʀɪᴏ-ᴍᴅ*"
               }),
               header: proto.Message.InteractiveMessage.Header.create({
                 ...(await prepareWAMessageMedia({ image: { url: `https://telegra.ph/file/fbbe1744668b44637c21a.jpg` } }, { upload: Matrix.waUploadToServer })),
@@ -84,11 +84,11 @@ const searchAPK = async (m, Matrix) => {
                   {
                     name: "single_select",
                     buttonParamsJson: JSON.stringify({
-                      title: "🔖 Select an APK",
+                      title: "💦 Choose Your Apk",
                       sections: [
                         {
-                          title: "😎 Top 10 APK Results",
-                          highlight_label: "🤩 Top 10",
+                          title: "🦜Top 10 APKs",
+                          highlight_label: "🦜Top 10",
                           rows: apkButtons
                         },
                       ]
@@ -99,7 +99,7 @@ const searchAPK = async (m, Matrix) => {
               contextInfo: {
                 mentionedJid: [m.sender],
                 forwardingScore: 9999,
-                isForwarded: true,
+                isForwarded: false,
               }
             }),
           },
@@ -109,7 +109,7 @@ const searchAPK = async (m, Matrix) => {
       await Matrix.relayMessage(msg.key.remoteJid, msg.message, {
         messageId: msg.key.id
       });
-      await m.React("✅");
+      await m.React("💫");
 
 
       apkIndex += topAPKs.length;
@@ -128,13 +128,13 @@ const searchAPK = async (m, Matrix) => {
         const iconUrl = apkDetails.icon;
         const size = apkDetails.size;
 
-        await Matrix.sendMessage(m.from, { image: { url: iconUrl }, caption: `You selected this APK:\n\nName: ${selectedAPK.name}\nsize: ${size}\n\n> © Powered by Ethix-MD` }, { quoted: m });
+        await Matrix.sendMessage(m.from, { image: { url: iconUrl }, caption: `You selected this APK:\n\nName: ${selectedAPK.name}\nsize: ${size}\n\n> *🦜 ᴅᴀʀᴋ-ʀɪᴏ-ᴍᴅ` }, { quoted: m });
 
   
         const apkMessage = {
           document: { url },
           mimetype: 'application/vnd.android.package-archive',
-          fileName: `${selectedAPK.name}.apk`
+          fileName: `(ᴅᴀʀᴋ-ʀɪᴏ-ᴍᴅ)${selectedAPK.name}.apk`
         };
 
         await Matrix.sendMessage(m.from, apkMessage, { quoted: m });
