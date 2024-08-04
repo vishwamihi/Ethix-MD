@@ -63,7 +63,7 @@ https://whatsapp.com/channel/0029VaSaZd5CBtxGawmSph1k
             title: "",
             gifPlayback: true,
             subtitle: "",
-            hasMediaAttachment: false 
+            hasMediaAttachment: true
           }),
           nativeFlowMessage: proto.Message.InteractiveMessage.NativeFlowMessage.create({
             buttons
@@ -71,7 +71,7 @@ https://whatsapp.com/channel/0029VaSaZd5CBtxGawmSph1k
           contextInfo: {
                   mentionedJid: [m.sender], 
                   forwardingScore: 999,
-                  isForwarded: true,
+                  isForwarded: false,
                 forwardedNewsletterMessageInfo: {
                   newsletterJid: '',
                   newsletterName: "DARK-RIO-MD",
