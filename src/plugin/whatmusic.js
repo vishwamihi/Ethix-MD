@@ -20,7 +20,7 @@ const shazam = async (m, gss) => {
     const quoted = m.quoted || {}; 
 
     if (!quoted || (quoted.mtype !== 'audioMessage' && quoted.mtype !== 'videoMessage')) {
-      return m.reply('You asked about music. Please provide a quoted audio or video message for identification.');
+      return m.reply('𝒀𝒐𝒖 𝒂𝒔𝒌𝒆𝒅 𝒂𝒃𝒐𝒖𝒕 𝒎𝒖𝒔𝒊𝒄. 𝑷𝒍𝒆𝒂𝒔𝒆 𝒑𝒓𝒐𝒗𝒊𝒅𝒆 𝒂 𝒒𝒖𝒐𝒕𝒆𝒅 𝒂𝒖𝒅𝒊𝒐 𝒐𝒓 𝒗𝒊𝒅𝒆𝒐 𝒎𝒆𝒔𝒔𝒂𝒈𝒆 𝒇𝒐𝒓 𝒊𝒅𝒆𝒏𝒕𝒊𝒇𝒊𝒄𝒂𝒕𝒊𝒐𝒏.');
     }
 
     const mime = m.quoted.mimetype;
@@ -29,7 +29,7 @@ const shazam = async (m, gss) => {
       const filePath = `./${Date.now()}.mp3`;
       fs.writeFileSync(filePath, media);
 
-      m.reply('Identifying the music, please wait...');
+      m.reply('𝑰𝒅𝒆𝒏𝒕𝒊𝒇𝒚𝒊𝒏𝒈 𝒕𝒉𝒆 𝒎𝒖𝒔𝒊𝒄, 𝒑𝒍𝒆𝒂𝒔𝒆 𝒘𝒂𝒊𝒕...');
 
       const res = await acr.identify(fs.readFileSync(filePath));
       const { code, msg } = res.status;
@@ -39,23 +39,23 @@ const shazam = async (m, gss) => {
       }
 
       const { title, artists, album, genres, release_date } = res.metadata.music[0];
-      const txt = `𝚁𝙴𝚂𝚄𝙻𝚃 
-      • 📌 *TITLE*: ${title}
-      • 👨‍🎤 𝙰𝚁𝚃𝙸𝚂𝚃: ${artists ? artists.map(v => v.name).join(', ') : 'NOT FOUND'}
-      • 💾 𝙰𝙻𝙱𝚄𝙼: ${album ? album.name : 'NOT FOUND'}
-      • 🌐 𝙶𝙴𝙽𝚁𝙴: ${genres ? genres.map(v => v.name).join(', ') : 'NOT FOUND'}
-      • 📆 RELEASE DATE: ${release_date || 'NOT FOUND'}
+      const txt = `𝗗𝗔𝗥𝗞-𝗥𝗜𝗢-𝗠𝗗 𝗥𝗘𝗦𝗨𝗟𝗧
+      • 💌 𝗧𝗜𝗧𝗟𝗘: ${title}
+      • 👨‍🎤 𝗔𝗥𝗧𝗜𝗦𝗧: ${artists ? artists.map(v => v.name).join(', ') : 'NOT FOUND'}
+      • 💾 𝗔𝗟𝗕𝗨𝗠: ${album ? album.name : 'NOT FOUND'}
+      • 🌐 𝗚𝗘𝗡𝗥𝗘: ${genres ? genres.map(v => v.name).join(', ') : 'NOT FOUND'}
+      • 📆 𝗥𝗘𝗟𝗘𝗔𝗦𝗘 𝗗𝗔𝗧𝗘: ${release_date || 'NOT FOUND'}
       `.trim();
 
       fs.unlinkSync(filePath);
       m.reply(txt);
     } catch (error) {
       console.error(error);
-      m.reply('An error occurred during music identification.');
+      m.reply('𝑨𝒏 𝒆𝒓𝒓𝒐𝒓 𝒐𝒄𝒄𝒖𝒓𝒓𝒆𝒅 𝒅𝒖𝒓𝒊𝒏𝒈 𝒎𝒖𝒔𝒊𝒄 𝒊𝒅𝒆𝒏𝒕𝒊𝒇𝒊𝒄𝒂𝒕𝒊𝒐𝒏.');
     }
   } catch (error) {
     console.error('Error:', error);
-    m.reply('An Error Occurred While Processing The Command.');
+    m.reply('𝑨𝒏 𝑬𝒓𝒓𝒐𝒓 𝑶𝒄𝒄𝒖𝒓𝒓𝒆𝒅 𝑾𝒉𝒊𝒍𝒆 𝑷𝒓𝒐𝒄𝒆𝒔𝒔𝒊𝒏𝒈 𝑻𝒉𝒆 𝑪𝒐𝒎𝒎𝒂𝒏𝒅.');
   }
 };
 
