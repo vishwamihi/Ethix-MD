@@ -9,7 +9,7 @@ const stickerCommandHandler = async (m, gss) => {
   const stickerCommands = ['cry', 'kiss', 'kill', 'kick', 'hug', 'pat', 'lick', 'bite', 'yeet', 'bully', 'bonk', 'wink', 'poke', 'nom', 'slap', 'smile', 'wave', 'awoo', 'blush', 'smug', 'dance', 'happy', 'sad', 'cringe', 'cuddle', 'shinobu', 'handhold', 'glomp', 'highfive'];
 
   if (stickerCommands.includes(cmd)) {
-    const packname = `Ethix-MD`;
+    const packname = `DARK-RIO-MD`;
     const author = '';
 
     try {
@@ -17,11 +17,11 @@ const stickerCommandHandler = async (m, gss) => {
       if (data && data.url) {
         gss.sendImageAsSticker(m.from, data.url, m, { packname, author });
       } else {
-        m.reply('Error fetching sticker.');
+        m.reply('𝑬𝒓𝒓𝒐𝒓 𝒇𝒆𝒕𝒄𝒉𝒊𝒏𝒈 𝒔𝒕𝒊𝒄𝒌𝒆𝒓.');
       }
     } catch (error) {
       console.error('Error fetching sticker:', error);
-      m.reply('Error fetching sticker.');
+      m.reply('𝑬𝒓𝒓𝒐𝒓 𝒇𝒆𝒕𝒄𝒉𝒊𝒏𝒈 𝒔𝒕𝒊𝒄𝒌𝒆𝒓.');
     }
   }
 };
