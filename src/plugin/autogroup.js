@@ -12,18 +12,18 @@ const groupSetting = async (m, gss) => {
     const validCommands = ['group'];
     if (!validCommands.includes(cmd)) return;
 
-    if (!m.isGroup) return m.reply("*📛 THIS COMMAND CAN ONLY BE USED IN GROUPS*");
+    if (!m.isGroup) return m.reply("*𝙾𝙽𝙻𝚈 𝙾𝚆𝙽𝙴𝚁 𝙲𝙰𝙽 𝚄𝚂𝙴 𝙸𝙽 𝙶𝚁𝙾𝚄𝙿 ❗*");
     const groupMetadata = await gss.groupMetadata(m.from);
     const participants = groupMetadata.participants;
     const botNumber = await gss.decodeJid(gss.user.id);
     const botAdmin = participants.find(p => p.id === botNumber)?.admin;
     const senderAdmin = participants.find(p => p.id === m.sender)?.admin;
 
-    if (!botAdmin) return m.reply("*📛 BOT MUST BE AN ADMIN TO USE THIS COMMAND*");
-    if (!senderAdmin) return m.reply("*📛 YOU MUST BE AN ADMIN TO USE THIS COMMAND*");
+    if (!botAdmin) return m.reply("*𝙱𝙾𝚃 𝙼𝚄𝚂𝚃 𝙱𝙴 𝙰𝙽 𝙰𝙳𝙼𝙸𝙽 𝚃𝙾 𝚄𝚂𝙴 𝚃𝙷𝙸𝚂 𝙲𝙾𝙼𝙼𝙰𝙽𝙳 ❗*");
+    if (!senderAdmin) return m.reply("*𝚈𝙾𝚄 𝙼𝚄𝚂𝚃 𝙱𝙴 𝙰𝙽 𝙰𝙳𝙼𝙸𝙽 𝚃𝙾 𝚄𝚂𝙴 𝚃𝙷𝙸𝚂 𝙲𝙾𝙼𝙼𝙰𝙽𝙳 ❗*");
 
     const args = m.body.slice(prefix.length + cmd.length).trim().split(/\s+/);
-    if (args.length < 1) return m.reply(`Please specify a setting (open/close) and optionally a time.\n\nExample:\n*${prefix + cmd} open* or *${prefix + cmd} open 04:00 PM*`);
+    if (args.length < 1) return m.reply(`𝑷𝒍𝒆𝒂𝒔𝒆 𝒔𝒑𝒆𝒄𝒊𝒇𝒚 𝒂 𝒔𝒆𝒕𝒕𝒊𝒏𝒈 (𝒐𝒑𝒆𝒏/𝒄𝒍𝒐𝒔𝒆) 𝒂𝒏𝒅 𝒐𝒑𝒕𝒊𝒐𝒏𝒂𝒍𝒍𝒚 𝒂 𝒕𝒊𝒎𝒆.\n\n𝑬𝒙𝒂𝒎𝒑𝒍𝒆:\n*${prefix + cmd} 𝒐𝒑𝒆𝒏* or *${prefix + cmd} 𝒐𝒑𝒆𝒏 04:00 𝑷𝑴*`);
 
     const groupSetting = args[0].toLowerCase();
     const time = args.slice(1).join(' ');
@@ -32,18 +32,18 @@ const groupSetting = async (m, gss) => {
     if (!time) {
       if (groupSetting === 'close') {
         await gss.groupSettingUpdate(m.from, 'announcement');
-        return m.reply("Group successfully closed.");
+        return m.reply("𝑮𝒓𝒐𝒖𝒑 𝒄𝒍𝒐𝒔𝒆𝒅 𝒏𝒐𝒘.");
       } else if (groupSetting === 'open') {
         await gss.groupSettingUpdate(m.from, 'not_announcement');
-        return m.reply("Group successfully opened.");
+        return m.reply("𝑮𝒓𝒐𝒖𝒑 𝒐𝒑𝒆𝒏𝒆𝒅 𝒏𝒐𝒘.");
       } else {
-        return m.reply(`Invalid setting. Use "open" to open the group and "close" to close the group.\n\nExample:\n*${prefix + cmd} open* or *${prefix + cmd} close*`);
+        return m.reply(`𝑰𝒏𝒗𝒂𝒍𝒊𝒅 𝒔𝒆𝒕𝒕𝒊𝒏𝒈. 𝑼𝒔𝒆 "𝒐𝒑𝒆𝒏" 𝒕𝒐 𝒐𝒑𝒆𝒏 𝒕𝒉𝒆 𝒈𝒓𝒐𝒖𝒑 𝒂𝒏𝒅 "𝒄𝒍𝒐𝒔𝒆" 𝒕𝒐 𝒄𝒍𝒐𝒔𝒆 𝒕𝒉𝒆 𝒈𝒓𝒐𝒖𝒑.\n\nExample:\n*${prefix + cmd} 𝒐𝒑𝒆𝒏* or *${prefix + cmd} 𝒄𝒍𝒐𝒔𝒆*`);
       }
     }
 
     // Check if the provided time is valid
     if (!/^\d{1,2}:\d{2}\s*(?:AM|PM)$/i.test(time)) {
-      return m.reply(`Invalid time format. Use HH:mm AM/PM format.\n\nExample:\n*${prefix + cmd} open 04:00 PM*`);
+      return m.reply(`𝑰𝒏𝒗𝒂𝒍𝒊𝒅 𝒕𝒊𝒎𝒆 𝒇𝒐𝒓𝒎𝒂𝒕. 𝑼𝒔𝒆 𝑯𝑯:𝒎𝒎 𝑨𝑴/𝑷𝑴 𝒇𝒐𝒓𝒎𝒂𝒕.\n\n𝑬𝒙𝒂𝒎𝒑𝒍𝒆:\n*${prefix + cmd} 𝒐𝒑𝒆𝒏 04:00 𝑷𝑴*`);
     }
 
     // Convert time to 24-hour format
@@ -63,23 +63,23 @@ const groupSetting = async (m, gss) => {
         console.log(`Executing scheduled task for ${groupSetting} at ${moment().format('HH:mm')} IST`);
         if (groupSetting === 'close') {
           await gss.groupSettingUpdate(m.from, 'announcement');
-          await gss.sendMessage(m.from, { text: "Group successfully closed." });
+          await gss.sendMessage(m.from, { text: "𝑮𝒓𝒐𝒖𝒑 𝒄𝒍𝒐𝒔𝒆𝒅 𝒏𝒐𝒘." });
         } else if (groupSetting === 'open') {
           await gss.groupSettingUpdate(m.from, 'not_announcement');
-          await gss.sendMessage(m.from, { text: "Group successfully opened." });
+          await gss.sendMessage(m.from, { text: "𝑮𝒓𝒐𝒖𝒑 𝒐𝒑𝒆𝒏𝒆𝒅 𝒏𝒐𝒘." });
         }
       } catch (err) {
         console.error('Error during scheduled task execution:', err);
-        await gss.sendMessage(m.from, { text: 'An error occurred while updating the group setting.' });
+        await gss.sendMessage(m.from, { text: '𝑨𝒏 𝒆𝒓𝒓𝒐𝒓 𝒐𝒄𝒄𝒖𝒓𝒓𝒆𝒅 𝒘𝒉𝒊𝒍𝒆 𝒖𝒑𝒅𝒂𝒕𝒊𝒏𝒈 𝒕𝒉𝒆 𝒈𝒓𝒐𝒖𝒑 𝒔𝒆𝒕𝒕𝒊𝒏𝒈.' });
       }
     }, {
-      timezone: "Asia/Kolkata"
+      timezone: "Asia/colombo"
     });
 
     m.reply(`Group will be set to "${groupSetting}" at ${time} IST.`);
   } catch (error) {
     console.error('Error:', error);
-    m.reply('An error occurred while processing the command.');
+    m.reply('𝑨𝒏 𝒆𝒓𝒓𝒐𝒓 𝒐𝒄𝒄𝒖𝒓𝒓𝒆𝒅 𝒘𝒉𝒊𝒍𝒆 𝒑𝒓𝒐𝒄𝒆𝒔𝒔𝒊𝒏𝒈 𝒕𝒉𝒆 𝒄𝒐𝒎𝒎𝒂𝒏𝒅.');
   }
 };
 
