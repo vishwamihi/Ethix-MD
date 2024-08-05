@@ -10,7 +10,7 @@ const stickerCommandHandler = async (m, gss) => {
 
   if (stickerCommands.includes(cmd)) {
     const packname = `DARK-RIO-MD`;
-    const author = '';
+    const author = 'DARK-RIO-BROTHERS';
 
     try {
       const { data } = await axios.get(`https://api.waifu.pics/sfw/${cmd}`);
