@@ -9,17 +9,17 @@ const autoblockCommand = async (m, Matrix) => {
   const text = m.body.slice(prefix.length + cmd.length).trim().toLowerCase();
 
   if (cmd === 'autoblock') {
-    if (!isCreator) return m.reply("*📛 THIS IS AN OWNER COMMAND*");
+    if (!isCreator) return m.reply("*💀 𝐎𝐍𝐋𝐘 𝐎𝐖𝐍𝐄𝐑𝐒**");
     let responseMessage;
 
     if (text === 'on') {
       config.AUTO_BLOCK = true;
-      responseMessage = "Auto-Block has been enabled.";
+      responseMessage = "𝙰𝚄𝚃𝙾-𝙱𝙻𝙾𝙲𝙺 𝙸𝚂 𝚆𝙾𝚁𝙺𝙸𝙽𝙶 ✅";
     } else if (text === 'off') {
       config.AUTO_BLOCK = false;
-      responseMessage = "Auto-Block has been disabled.";
+      responseMessage = "𝙰𝚄𝚃𝙾-𝙱𝙻𝙾𝙲𝙺 𝙸𝚂 𝙽𝙾𝚃 𝚆𝙾𝚁𝙺𝙸𝙽𝙶 ❌";
     } else {
-      responseMessage = "Usage:\n- `autoblock on`: Enable Auto-Block\n- `autoblock off`: Disable Auto-Block";
+      responseMessage = "Usage:\n- `autoblock on`: 𝙰𝚄𝚃𝙾-𝙱𝙻𝙾𝙲𝙺 𝙸𝚂 𝚆𝙾𝚁𝙺𝙸𝙽𝙶 ✅\n- `autoblock off`: 𝙰𝚄𝚃𝙾-𝙱𝙻𝙾𝙲𝙺 𝙸𝚂 𝙽𝙾𝚃 𝚆𝙾𝚁𝙺𝙸𝙽𝙶 ❌";
     }
     try {
       await Matrix.sendMessage(m.from, { text: responseMessage }, { quoted: m });
