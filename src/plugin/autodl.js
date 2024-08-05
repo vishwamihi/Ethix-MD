@@ -22,7 +22,7 @@ const downloadAndSendMedia = async (m, Matrix) => {
 
       if (result.status) {
         const mediaData = result.data;
-        const caption = `> © Powered By Ethix-Xsid`;
+        const caption = `> © 🦜ᴅᴀʀᴋ-ʀɪᴏ-ᴍᴅ`;
 
         if (mediaData.low) {
           const mediaUrl = mediaData.low;
@@ -38,7 +38,7 @@ const downloadAndSendMedia = async (m, Matrix) => {
     }
   } catch (error) {
     console.error('Error downloading and sending media:', error.message);
-    m.reply('Error downloading and sending media.');
+    m.reply('𝑬𝒓𝒓𝒐𝒓 𝒅𝒐𝒘𝒏𝒍𝒐𝒂𝒅𝒊𝒏𝒈 𝒂𝒏𝒅 𝒔𝒆𝒏𝒅𝒊𝒏𝒈 𝒎𝒆𝒅𝒊𝒂.');
     await m.React('❌');
   }
 };
