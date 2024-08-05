@@ -40,7 +40,7 @@ const audioEffects = async (m, gss) => {
     }
 
     if (!m.quoted || m.quoted.mtype !== 'audioMessage') {
-      return m.reply(`Reply to the audio you want to change with a caption *${prefix + cmd}*`);
+      return m.reply(`𝑹𝒆𝒑𝒍𝒚 𝒕𝒐 𝒕𝒉𝒆 𝒂𝒖𝒅𝒊𝒐 𝒚𝒐𝒖 𝒘𝒂𝒏𝒕 𝒕𝒐 𝒄𝒉𝒂𝒏𝒈𝒆 𝒘𝒊𝒕𝒉 𝒂 𝒄𝒂𝒑𝒕𝒊𝒐𝒏 *${prefix + cmd}*`);
     }
 
     m.reply('Please wait...');
@@ -53,7 +53,7 @@ const audioEffects = async (m, gss) => {
       fs.unlinkSync(mediaPath);
       if (err) {
         console.error('Error:', err);
-        return m.reply('An error occurred while processing the audio.');
+        return m.reply('𝑨𝒏 𝒆𝒓𝒓𝒐𝒓 𝒐𝒄𝒄𝒖𝒓𝒓𝒆𝒅 𝒘𝒉𝒊𝒍𝒆 𝒑𝒓𝒐𝒄𝒆𝒔𝒔𝒊𝒏𝒈 𝒕𝒉𝒆 𝒂𝒖𝒅𝒊𝒐.');
       }
       const buff = fs.readFileSync(outputPath);
       gss.sendMessage(m.from, { audio: buff, mimetype: 'audio/mpeg' }, { quoted: m });
@@ -61,7 +61,7 @@ const audioEffects = async (m, gss) => {
     });
   } catch (e) {
     console.error('Error:', e);
-    m.reply('An error occurred while processing the command.');
+    m.reply('𝑨𝒏 𝒆𝒓𝒓𝒐𝒓 𝒐𝒄𝒄𝒖𝒓𝒓𝒆𝒅 𝒘𝒉𝒊𝒍𝒆 𝒑𝒓𝒐𝒄𝒆𝒔𝒔𝒊𝒏𝒈 𝒕𝒉𝒆 𝒄𝒐𝒎𝒎𝒂𝒏𝒅.');
   }
 };
 
