@@ -7,7 +7,7 @@ const alive = async (m, Matrix) => {
   const hours = Math.floor((uptimeSeconds % (24 * 3600)) / 3600);
   const minutes = Math.floor((uptimeSeconds % 3600) / 60);
   const seconds = Math.floor(uptimeSeconds % 60);
-
+  
   const prefix = /^[\\/!#.]/gi.test(m.body) ? m.body.match(/^[\\/!#.]/gi)[0] : '/';
   const cmd = m.body.startsWith(prefix) ? m.body.slice(prefix.length).toLowerCase() : '';
     if (['alive', 'uptime', 'runtime'].includes(cmd)) {
@@ -22,11 +22,9 @@ const alive = async (m, Matrix) => {
 > 𝗧𝘆𝗽𝗲 .𝗺𝗲𝗻𝘂 𝘁𝗼 𝗴𝗲𝘁 𝗰𝗼𝗺𝗺𝗮𝗻𝗱 𝗹𝗶𝘀𝘁📃
 
 "Amidst the complexity of technology, small developers find beauty in simplicity, crafting elegant solutions that make a big difference."
+> Follow us https://whatsapp.com/channel/0029VaSaZd5CBtxGawmSph1k
 
-> *Follow us*
-https://whatsapp.com/channel/0029VaSaZd5CBtxGawmSph1k
-
-> 𝐃𝐀𝐑𝐊-𝐑𝐈𝐎-𝐁𝐑𝐎𝐓𝐇𝐄𝐑𝐒 </>🇱🇰`;
+> 𝐃𝐀𝐑𝐊-𝐑𝐈𝐎-𝐁𝐑𝐎𝐓𝐇𝐄𝐑𝐒 </>🇱🇰';
 
   const buttons = [
         {
@@ -35,15 +33,7 @@ https://whatsapp.com/channel/0029VaSaZd5CBtxGawmSph1k
             display_text: "MENU",
             id: `.menu`
           })
-        },
-        {
-          "name": "quick_reply",
-          "buttonParamsJson": JSON.stringify({
-            display_text: "Follow us",
-            id: `https://whatsapp.com/channel/0029VaSaZd5CBtxGawmSph1k`
-          })
-        }
-        ];
+        };
 
   const msg = generateWAMessageFromContent(m.from, {
     viewOnceMessage: {
@@ -57,13 +47,13 @@ https://whatsapp.com/channel/0029VaSaZd5CBtxGawmSph1k
             text: uptimeMessage
           }),
           footer: proto.Message.InteractiveMessage.Footer.create({
-            text: "*🦜 ᴅᴀʀᴋ-ʀɪᴏ-ᴍᴅ*"
+            text: "🦜ᴅᴀʀᴋ-ʀɪᴏ-ᴍᴅ"
           }),
           header: proto.Message.InteractiveMessage.Header.create({
             title: "",
             gifPlayback: true,
             subtitle: "",
-            hasMediaAttachment: true
+            hasMediaAttachment: false 
           }),
           nativeFlowMessage: proto.Message.InteractiveMessage.NativeFlowMessage.create({
             buttons
@@ -73,7 +63,7 @@ https://whatsapp.com/channel/0029VaSaZd5CBtxGawmSph1k
                   forwardingScore: 999,
                   isForwarded: false,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '',
+                  newsletterJid: '120363249960769123@newsletter',
                   newsletterName: "DARK-RIO-MD",
                   serverMessageId: 143
                 }
